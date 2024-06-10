@@ -1,0 +1,43 @@
+name: Sync Files
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron: 55 15 * * *
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 准备完成
+      uses: actions/checkout@main
+
+    - name: 下载源码
+      run: |
+        # 拉取luci-app-usb-printer软件包
+        mkdir -p ./workdir/luci-app-usb-printer
+        git clone https://github.com/kenzok8/jell.git
+        # ls jell/luci-app-usb-printer
+        cp -a jell/luci-app-usb-printer/* ./workdir/luci-app-usb-printer/
+        # ls ./workdir/luci-app-usb-printer
+
+
+    - name: 同步配置
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.ACCESS_TOKEN }}
+        publish_branch: main
+        publish_dir: ./workdir
+        user_name: 'GitHub Action'
+        user_email: 'github-actions[bot]@github.com'
+        exclude_assets: ''
+        keep_files: true
+        commit_message: "Sync files"
+
+    - name: 删除运行记录
+      uses: xiaomeng9597/delete-workflow-runs@main
+      with:
+        retain_days: 1
+        keep_minimum_runs: 1
+        token: ${{ secrets.ACCESS_TOKEN }}
