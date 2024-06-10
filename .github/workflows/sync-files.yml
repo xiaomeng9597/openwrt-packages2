@@ -15,13 +15,8 @@ jobs:
 
     - name: 下载源码
       run: |
-        # 拉取luci-app-usb-printer软件包
-        mkdir -p ./workdir/luci-app-usb-printer
-        git clone https://github.com/kenzok8/jell.git
-        # ls jell/luci-app-usb-printer
-        cp -a jell/luci-app-usb-printer/* ./workdir/luci-app-usb-printer/
-        # ls ./workdir/luci-app-usb-printer
-
+        chmod +x $GITHUB_WORKSPACE/scripts/*.sh
+        $GITHUB_WORKSPACE/scripts/sync-packages.sh
 
     - name: 同步配置
       uses: peaceiris/actions-gh-pages@v3
