@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # 工作目录
 syncpath="./workdir"
 
