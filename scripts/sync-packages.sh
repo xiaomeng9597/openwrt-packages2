@@ -1,5 +1,5 @@
 #!/bin/bash
-# 设置统一的同步目录
+# 工作目录
 syncpath="./workdir"
 
 # 拉取luci-app-usb-printer软件包
