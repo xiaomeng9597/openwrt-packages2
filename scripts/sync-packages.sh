@@ -13,3 +13,9 @@ cp -a jell/luci-app-usb-printer/* $syncpath/luci-app-usb-printer/
 # ls luci/applications/luci-app-usb-printer
 # cp -a luci/applications/luci-app-usb-printer/* $syncpath/luci-app-usb-printer/
 # ls $syncpath/luci-app-usb-printer
+
+
+# 拉取filebrowser软件包
+git clone https://github.com/kenzok8/openwrt-packages.git
+cp -a openwrt-packages/filebrowser/* $syncpath/filebrowser/
+cp -a openwrt-packages/luci-app-filebrowser/* $syncpath/luci-app-filebrowser/
