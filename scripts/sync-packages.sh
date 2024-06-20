@@ -2,6 +2,9 @@
 
 # 工作目录
 syncpath="./workdir"
+mkdir -p /mnt/xiaomeng9597
+cd /mnt/xiaomeng9597
+
 
 # 拉取luci-app-usb-printer软件包
 mkdir -p $syncpath/luci-app-usb-printer
