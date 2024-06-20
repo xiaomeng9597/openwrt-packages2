@@ -26,5 +26,11 @@ cp -a jell/luci-app-LingTiGameAcc/* $syncpath/luci-app-LingTiGameAcc/
 
 # 拉取filebrowser软件包
 mkdir -p $syncpath/luci-app-filebrowser
-git clone https://github.com/Lienol/openwrt-package.git
-cp -a openwrt-package/luci-app-filebrowser/* $syncpath/luci-app-filebrowser/
+git clone https://gitee.com/mu_xin/luci-app-filebrowser.git
+cp -a luci-app-filebrowser/* $syncpath/luci-app-filebrowser/
+
+
+# 拉取filebrowser软件包
+# mkdir -p $syncpath/luci-app-filebrowser
+# git clone https://github.com/Lienol/openwrt-package.git
+# cp -a openwrt-package/luci-app-filebrowser/* $syncpath/luci-app-filebrowser/
