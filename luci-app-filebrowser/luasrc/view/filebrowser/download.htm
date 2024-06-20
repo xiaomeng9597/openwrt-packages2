@@ -94,7 +94,7 @@ local dsp = require "luci.dispatcher"
         if (json.version) {
           urlNode = '<em style="color:red;"><%:The latest version:%>' + json.version + '</em>';
           if (json.url && json.url.html && json.url.download) {
-            urlNode = '<a href="' + json.url.html + '" target="_blank" style="color:red;text-decoration:underline;">' + urlNode + '</a>'+'&nbsp;&nbsp;&nbsp;<a href="'+json.url.download+'" target="_blank" style="text-decoration:underline;">下载失败！点击此处</a>';
+            urlNode = '<a href="' + json.url.html + '" target="_blank" style="color:red;text-decoration:underline;">' + urlNode + '</a>' + '&nbsp;&nbsp;&nbsp;<a href="' + json.url.download + '" target="_blank" style="text-decoration:underline;">下载失败！点击此处</a>';
           } else if (json.url && json.url.html) {
             urlNode = '<a href="' + json.url.html + '" target="_blank">' + urlNode + '</a>';
          }
