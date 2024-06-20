@@ -1,9 +1,11 @@
 #!/bin/bash
 
 # 工作目录
-syncpath="./workdir"
-mkdir -p /mnt/xiaomeng9597
+sudo mkdir -p /mnt/xiaomeng9597
+sudo chown $USER:$GROUPS /mnt/xiaomeng9597
 cd /mnt/xiaomeng9597
+syncpath="/mnt/xiaomeng9597/workdir"
+
 
 
 # 拉取luci-app-usb-printer软件包
@@ -13,13 +15,6 @@ git clone https://github.com/kenzok8/jell.git
 cp -a jell/luci-app-usb-printer/* $syncpath/luci-app-usb-printer/
 
 
-# 拉取LingTiGameAcc软件包
-mkdir -p $syncpath/LingTiGameAcc
-mkdir -p $syncpath/luci-app-LingTiGameAcc
-cp -a jell/LingTiGameAcc/* $syncpath/LingTiGameAcc/
-cp -a jell/luci-app-LingTiGameAcc/* $syncpath/luci-app-LingTiGameAcc/
-
-
 # 拉取luci-app-usb-printer软件包
 # git clone https://github.com/immortalwrt/luci.git
 # ls luci/applications/luci-app-usb-printer
@@ -27,12 +22,17 @@ cp -a jell/luci-app-LingTiGameAcc/* $syncpath/luci-app-LingTiGameAcc/
 # ls $syncpath/luci-app-usb-printer
 
 
+# 拉取LingTiGameAcc软件包
+mkdir -p $syncpath/LingTiGameAcc
+mkdir -p $syncpath/luci-app-LingTiGameAcc
+cp -a jell/LingTiGameAcc/* $syncpath/LingTiGameAcc/
+cp -a jell/luci-app-LingTiGameAcc/* $syncpath/luci-app-LingTiGameAcc/
+
+
 # 拉取filebrowser软件包
 mkdir -p $syncpath/luci-app-filebrowser
-mkdir -p $syncpath/luci-app-filebrowser/po/zh-cn
-git clone https://gitee.com/mu_xin/luci-app-filebrowser.git
+git clone -b 18.06 https://gitee.com/mu_xin/luci-app-filebrowser.git
 cp -a luci-app-filebrowser/* $syncpath/luci-app-filebrowser/
-cp -f luci-app-filebrowser/po/zh_Hans/filebrowser.po $syncpath/luci-app-filebrowser/po/zh-cn/filebrowser.po
 
 
 # 拉取filebrowser软件包
