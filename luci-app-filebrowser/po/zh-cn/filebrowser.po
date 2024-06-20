@@ -55,8 +55,8 @@ msgstr "文件较大，至少需要32M空间。建议插入U盘或硬盘，或�
 msgid "Manually download"
 msgstr "手动下载"
 
-msgid "Make sure you have enough space.<br />Binary file download address：https://github.com/filebrowser/filebrowser/releases<br /><font style='color:red'>Be sure to fill out the executable storage directory the first time you run it, and then save the application. Then manually download, otherwise can not use!</font>"
-msgstr "请确保具有足够的空间。<br />二进制文件下载地址：https://github.com/filebrowser/filebrowser/releases<br /><font style='color:red'>第一次运行务必填好项目存放目录，然后保存应用。再手动下载，否则无法使用！</font>"
+msgid "Make sure you have enough space.<br />Binary file download address：<a href=\"https://github.com/filebrowser/filebrowser/releases\" target=\"_blank\" style=\"text-decoration:underline;\">https://github.com/filebrowser/filebrowser/releases</a><br /><font style='color:red'>Be sure to fill out the executable storage directory the first time you run it, and then save the application. Then manually download, otherwise can not use!</font>"
+msgstr "请确保具有足够的空间。<br />二进制文件下载地址：<a href=\"https://github.com/filebrowser/filebrowser/releases\" target=\"_blank\" style=\"text-decoration:underline;\">https://github.com/filebrowser/filebrowser/releases</a><br /><font style='color:red'>第一次运行务必填好项目存放目录，然后保存应用。再手动下载，否则无法使用！</font>"
 
 msgid "Logs"
 msgstr "日志"
