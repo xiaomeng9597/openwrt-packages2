@@ -106,8 +106,8 @@ msgstr "发现新版本，但未能获得新版本的下载地址。"
 msgid "Download url is required."
 msgstr "请指定下载地址。"
 
-msgid "File download failed or timed out: %s"
-msgstr "文件下载失败或超时：%s"
+msgid "File download failed or download timed out: %s"
+msgstr "文件下载失败或下载超时：%s"
 
 msgid "File path required."
 msgstr "请指定文件路径。"
