@@ -9,6 +9,15 @@ git clone https://github.com/kenzok8/jell.git
 # ls jell/luci-app-usb-printer
 cp -a jell/luci-app-usb-printer/* $syncpath/luci-app-usb-printer/
 
+
+# 拉取LingTiGameAcc软件包
+mkdir -p $syncpath/LingTiGameAcc
+mkdir -p $syncpath/luci-app-LingTiGameAcc
+cp -a jell/LingTiGameAcc/* $syncpath/LingTiGameAcc/
+cp -a jell/luci-app-LingTiGameAcc/* $syncpath/luci-app-LingTiGameAcc/
+
+
+# 拉取luci-app-usb-printer软件包
 # git clone https://github.com/immortalwrt/luci.git
 # ls luci/applications/luci-app-usb-printer
 # cp -a luci/applications/luci-app-usb-printer/* $syncpath/luci-app-usb-printer/
