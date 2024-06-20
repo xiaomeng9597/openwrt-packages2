@@ -31,7 +31,8 @@ cp -a jell/luci-app-LingTiGameAcc/* $syncpath/luci-app-LingTiGameAcc/
 
 # 拉取filebrowser软件包
 mkdir -p $syncpath/luci-app-filebrowser
-git clone -b 18.06 https://gitee.com/mu_xin/luci-app-filebrowser.git
+git clone -b 18.06 https://github.com/xiaozhuai/luci-app-filebrowser.git
+# git clone -b 18.06 https://gitee.com/mu_xin/luci-app-filebrowser.git
 cp -a luci-app-filebrowser/* $syncpath/luci-app-filebrowser/
 
 
@@ -39,3 +40,11 @@ cp -a luci-app-filebrowser/* $syncpath/luci-app-filebrowser/
 # mkdir -p $syncpath/luci-app-filebrowser
 # git clone https://github.com/Lienol/openwrt-package.git
 # cp -a openwrt-package/luci-app-filebrowser/* $syncpath/luci-app-filebrowser/
+
+
+# 拉取webd软件包
+mkdir -p $syncpath/webd
+mkdir -p $syncpath/luci-app-webd
+git clone https://github.com/Hyy2001X/AutoBuild-Packages.git
+cp -a AutoBuild-Packages/webd/* $syncpath/webd/
+cp -a AutoBuild-Packages/luci-app-webd/* $syncpath/luci-app-webd/
