@@ -49,14 +49,14 @@ msgstr "指向一个路径，可在web界面访问你的文件，默认为 /root
 msgid "Executable directory"
 msgstr "可执行文件存放目录"
 
-msgid "The file size is large, requiring at least 32M space. It is recommended to insert a usb flash drive or hard disk, or use it in the tmp directory<br />For example, /mnt/sda1<br />For example, /tmp"
-msgstr "文件较大，至少需要32M空间。建议插入U盘或硬盘，或放入tmp目录里使用<br />例如：/mnt/sda1<br />例如：/tmp"
+msgid "The file size is large, requiring at least 32M space. It is recommended to insert a usb flash drive or hard disk, or use it in the tmp directory<br />For example, /mnt/sda1<br />For example, /usr/bin<br />For example, /tmp"
+msgstr "文件较大，至少需要32M空间。建议插入U盘或硬盘，或放入tmp目录里使用<br />例如：/mnt/sda1<br />例如：/usr/bin<br />例如：/tmp"
 
 msgid "Manually download"
 msgstr "手动下载"
 
-msgid "Make sure you have enough space. <br /><font style='color:red'>Be sure to fill out the executable storage directory the first time you run it, and then save the application. Then manually download, otherwise can not use!</font>"
-msgstr "请确保具有足够的空间。<br /><font style='color:red'>第一次运行务必填好项目存放目录，然后保存应用。再手动下载，否则无法使用！</font>"
+msgid "Make sure you have enough space.<br />Binary file download address：https://github.com/filebrowser/filebrowser/releases<br /><font style='color:red'>Be sure to fill out the executable storage directory the first time you run it, and then save the application. Then manually download, otherwise can not use!</font>"
+msgstr "请确保具有足够的空间。<br />二进制文件下载地址：https://github.com/filebrowser/filebrowser/releases<br /><font style='color:red'>第一次运行务必填好项目存放目录，然后保存应用。再手动下载，否则无法使用！</font>"
 
 msgid "Logs"
 msgstr "日志"
