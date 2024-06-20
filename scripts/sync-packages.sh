@@ -34,6 +34,8 @@ mkdir -p $syncpath/luci-app-filebrowser
 git clone -b 18.06 https://github.com/xiaozhuai/luci-app-filebrowser.git
 # git clone -b 18.06 https://gitee.com/mu_xin/luci-app-filebrowser.git
 cp -a luci-app-filebrowser/* $syncpath/luci-app-filebrowser/
+sed -i "s/File download failed or timed out/File download failed or download timed out/g" $syncpath/luci-app-filebrowser/po/zh-cn/filebrowser.po
+sed -i "s/文件下载失败或超时/文件下载失败或下载超时/g" $syncpath/luci-app-filebrowser/po/zh-cn/filebrowser.po
 
 
 # 拉取filebrowser软件包
