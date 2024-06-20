@@ -26,8 +26,10 @@ cp -a jell/luci-app-LingTiGameAcc/* $syncpath/luci-app-LingTiGameAcc/
 
 # 拉取filebrowser软件包
 mkdir -p $syncpath/luci-app-filebrowser
+mkdir -p $syncpath/luci-app-filebrowser/po/zh-cn
 git clone https://gitee.com/mu_xin/luci-app-filebrowser.git
 cp -a luci-app-filebrowser/* $syncpath/luci-app-filebrowser/
+cp -f luci-app-filebrowser/po/zh_Hans/filebrowser.po $syncpath/luci-app-filebrowser/po/zh-cn/filebrowser.po
 
 
 # 拉取filebrowser软件包
