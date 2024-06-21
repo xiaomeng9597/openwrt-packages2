@@ -254,7 +254,7 @@ function to_download(url)
         exec("/bin/rm", {"-f", tmp_file})
         return {
             code = 1,
-            error = i18n.translatef("File download failed or timed out: %s", url)
+            error = i18n.translatef("File download failed or download timed out: %s", url)
         }
     end
 
