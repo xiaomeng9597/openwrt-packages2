@@ -43,12 +43,12 @@ o.rmempty = false
 
 o = s:option(Value, "executable_directory", translate("Executable directory"),
              translate(
-                 "The file size is large, requiring at least 32M space. It is recommended to insert a usb flash drive or hard disk, or use it in the tmp directory<br />For example, /mnt/sda1<br />For example, /tmp"))
+                 "The file size is large, requiring at least 32M space. It is recommended to insert a usb flash drive or hard disk, or use it in the tmp directory<br />For example, /mnt/sda1<br />For example, /usr/bin<br />For example, /tmp"))
 o.default = "/tmp"
 o.rmempty = false
 
 o = s:option(Button, "_download", translate("Manually download"), translate(
-                 "Make sure you have enough space. <br /><font style='color:red'>Be sure to fill out the executable storage directory the first time you run it, and then save the application. Then manually download, otherwise can not use!</font>"))
+                 "Make sure you have enough space.<br />Binary file download address：<a href='https://github.com/filebrowser/filebrowser/releases' target='_blank' style='text-decoration:underline;'>https://github.com/filebrowser/filebrowser/releases</a><br /><font style='color:red'>Be sure to fill out the executable storage directory the first time you run it, and then save the application. Then manually download, otherwise can not use!</font>"))
 o.template = "filebrowser/download"
 o.inputstyle = "apply"
 o.btnclick = "downloadClick(this);"
