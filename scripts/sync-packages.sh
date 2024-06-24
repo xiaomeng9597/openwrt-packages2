@@ -50,3 +50,21 @@ mkdir -p $syncpath/luci-app-webd
 git clone https://github.com/Hyy2001X/AutoBuild-Packages.git
 cp -a AutoBuild-Packages/webd/* $syncpath/webd/
 cp -a AutoBuild-Packages/luci-app-webd/* $syncpath/luci-app-webd/
+
+
+# 拉取quectel_cm_5G软件包
+# mkdir -p $syncpath/quectel_cm_5G
+# git clone https://github.com/coolsnowwolf/lede.git
+# cp -a lede/package/wwan/app/quectel_cm_5G/* $syncpath/quectel_cm_5G/
+
+
+# 拉取luci-app-modem软件包
+mkdir -p $syncpath/sms-tool
+mkdir -p $syncpath/quectel_MHI
+mkdir -p $syncpath/quectel_cm_5G
+mkdir -p $syncpath/luci-app-modem
+git clone https://github.com/Siriling/5G-Modem-Support.git
+cp -a 5G-Modem-Support/sms-tool/* $syncpath/sms-tool/
+cp -a 5G-Modem-Support/quectel_MHI/* $syncpath/quectel_MHI/
+cp -a 5G-Modem-Support/quectel_cm_5G/* $syncpath/quectel_cm_5G/
+cp -a 5G-Modem-Support/luci-app-modem/* $syncpath/luci-app-modem/
