@@ -61,10 +61,16 @@ cp -a AutoBuild-Packages/luci-app-webd/* $syncpath/luci-app-webd/
 # 拉取luci-app-modem软件包
 mkdir -p $syncpath/sms-tool
 mkdir -p $syncpath/quectel_MHI
+mkdir -p $syncpath/quectel_Gobinet
 mkdir -p $syncpath/quectel_cm_5G
+mkdir -p $syncpath/fibocom_MHI
 mkdir -p $syncpath/luci-app-modem
+mkdir -p $syncpath/luci-app-sms-tool
 git clone https://github.com/Siriling/5G-Modem-Support.git
 cp -a 5G-Modem-Support/sms-tool/* $syncpath/sms-tool/
 cp -a 5G-Modem-Support/quectel_MHI/* $syncpath/quectel_MHI/
+cp -a 5G-Modem-Support/quectel_Gobinet/* $syncpath/quectel_Gobinet/
 cp -a 5G-Modem-Support/quectel_cm_5G/* $syncpath/quectel_cm_5G/
+cp -a 5G-Modem-Support/fibocom_MHI/* $syncpath/fibocom_MHI/
 cp -a 5G-Modem-Support/luci-app-modem/* $syncpath/luci-app-modem/
+cp -a 5G-Modem-Support/luci-app-sms-tool/* $syncpath/luci-app-sms-tool/
