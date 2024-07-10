@@ -19,7 +19,6 @@ cp -a jell/luci-app-usb-printer/* $syncpath/luci-app-usb-printer/
 # git clone https://github.com/immortalwrt/luci.git
 # ls luci/applications/luci-app-usb-printer
 # cp -a luci/applications/luci-app-usb-printer/* $syncpath/luci-app-usb-printer/
-# ls $syncpath/luci-app-usb-printer
 
 
 # 拉取LingTiGameAcc软件包
