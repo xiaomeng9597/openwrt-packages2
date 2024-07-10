@@ -4,14 +4,14 @@ on:
   repository_dispatch:
   workflow_dispatch:
   schedule:
-    - cron: 55 15 * * *
+    - cron: '55 15 * * *'
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
     - name: 准备完成
-      uses: actions/checkout@main
+      uses: actions/checkout@v3
 
     - name: 下载源码
       run: |
