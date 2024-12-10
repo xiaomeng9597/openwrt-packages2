@@ -15,7 +15,7 @@ jobs:
 
     - name: 下载源码
       run: |
-        chmod +x $GITHUB_WORKSPACE/scripts/*.sh
+        chmod +x $GITHUB_WORKSPACE/diy-scripts/*.sh
         $GITHUB_WORKSPACE/diy-scripts/sync-packages.sh
 
     - name: 同步配置
