@@ -64,6 +64,12 @@ mkdir -p $syncpath/quectel_Gobinet
 mkdir -p $syncpath/quectel_cm_5G
 mkdir -p $syncpath/luci-app-modem
 mkdir -p $syncpath/luci-app-sms-tool
+mkdir -p $syncpath/luci-app-pcimodem
+mkdir -p $syncpath/luci-app-usbmodem
+mkdir -p $syncpath/luci-app-cpe
+mkdir -p $syncpath/fibocom-dial
+mkdir -p $syncpath/fibocom_MHI
+mkdir -p $syncpath/fibocom_QMI_WWAN
 git clone https://github.com/Siriling/5G-Modem-Support.git
 cp -a 5G-Modem-Support/sms-tool/* $syncpath/sms-tool/
 cp -a 5G-Modem-Support/quectel_MHI/* $syncpath/quectel_MHI/
@@ -71,3 +77,9 @@ cp -a 5G-Modem-Support/quectel_Gobinet/* $syncpath/quectel_Gobinet/
 cp -a 5G-Modem-Support/quectel_cm_5G/* $syncpath/quectel_cm_5G/
 cp -a 5G-Modem-Support/luci-app-modem/* $syncpath/luci-app-modem/
 cp -a 5G-Modem-Support/luci-app-sms-tool/* $syncpath/luci-app-sms-tool/
+cp -a 5G-Modem-Support/luci-app-pcimodem/* $syncpath/luci-app-pcimodem/
+cp -a 5G-Modem-Support/luci-app-usbmodem/* $syncpath/luci-app-usbmodem/
+cp -a 5G-Modem-Support/luci-app-cpe/* $syncpath/luci-app-cpe/
+cp -a 5G-Modem-Support/fibocom-dial/* $syncpath/fibocom-dial/
+cp -a 5G-Modem-Support/fibocom_MHI/* $syncpath/fibocom_MHI/
+cp -a 5G-Modem-Support/fibocom_QMI_WWAN/* $syncpath/fibocom_QMI_WWAN/
