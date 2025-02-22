@@ -68,7 +68,6 @@ mkdir -p $syncpath/luci-app-modem
 mkdir -p $syncpath/luci-app-sms-tool
 mkdir -p $syncpath/luci-app-pcimodem
 mkdir -p $syncpath/luci-app-usbmodem
-mkdir -p $syncpath/luci-app-cpe
 mkdir -p $syncpath/fibocom-dial
 mkdir -p $syncpath/fibocom_QMI_WWAN
 mkdir -p $syncpath/meig-cm
@@ -84,7 +83,6 @@ cp -a 5G-Modem-Support/luci-app-modem/* $syncpath/luci-app-modem/
 cp -a 5G-Modem-Support/luci-app-sms-tool/* $syncpath/luci-app-sms-tool/
 cp -a 5G-Modem-Support/luci-app-pcimodem/* $syncpath/luci-app-pcimodem/
 cp -a 5G-Modem-Support/luci-app-usbmodem/* $syncpath/luci-app-usbmodem/
-cp -a 5G-Modem-Support/luci-app-cpe/* $syncpath/luci-app-cpe/
 cp -a 5G-Modem-Support/fibocom-dial/* $syncpath/fibocom-dial/
 cp -a 5G-Modem-Support/fibocom_QMI_WWAN/* $syncpath/fibocom_QMI_WWAN/
 cp -a 5G-Modem-Support/meig-cm/* $syncpath/meig-cm/
