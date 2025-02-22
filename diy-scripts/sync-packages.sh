@@ -72,6 +72,8 @@ mkdir -p $syncpath/luci-app-usbmodem
 mkdir -p $syncpath/luci-app-cpe
 mkdir -p $syncpath/fibocom-dial
 mkdir -p $syncpath/fibocom_QMI_WWAN
+mkdir -p $syncpath/meig-cm
+mkdir -p $syncpath/meig_QMI_WWAN
 git clone https://github.com/Siriling/5G-Modem-Support.git
 cp -a 5G-Modem-Support/sendat/* $syncpath/sendat/
 cp -a 5G-Modem-Support/sms-tool/* $syncpath/sms-tool/
@@ -87,3 +89,5 @@ cp -a 5G-Modem-Support/luci-app-usbmodem/* $syncpath/luci-app-usbmodem/
 cp -a 5G-Modem-Support/luci-app-cpe/* $syncpath/luci-app-cpe/
 cp -a 5G-Modem-Support/fibocom-dial/* $syncpath/fibocom-dial/
 cp -a 5G-Modem-Support/fibocom_QMI_WWAN/* $syncpath/fibocom_QMI_WWAN/
+cp -a 5G-Modem-Support/meig-cm/* $syncpath/meig-cm/
+cp -a 5G-Modem-Support/meig_QMI_WWAN/* $syncpath/meig_QMI_WWAN/
