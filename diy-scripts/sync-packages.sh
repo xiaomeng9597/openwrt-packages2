@@ -63,7 +63,6 @@ mkdir -p $syncpath/sms-tool
 mkdir -p $syncpath/quectel_MHI
 mkdir -p $syncpath/quectel_Gobinet
 mkdir -p $syncpath/quectel_QMI_WWAN
-mkdir -p $syncpath/quectel_SRPD_PCIE
 mkdir -p $syncpath/quectel_cm_5G
 mkdir -p $syncpath/luci-app-modem
 mkdir -p $syncpath/luci-app-sms-tool
@@ -80,7 +79,6 @@ cp -a 5G-Modem-Support/sms-tool/* $syncpath/sms-tool/
 cp -a 5G-Modem-Support/quectel_MHI/* $syncpath/quectel_MHI/
 cp -a 5G-Modem-Support/quectel_Gobinet/* $syncpath/quectel_Gobinet/
 cp -a 5G-Modem-Support/quectel_QMI_WWAN/* $syncpath/quectel_QMI_WWAN/
-cp -a 5G-Modem-Support/quectel_SRPD_PCIE/* $syncpath/quectel_SRPD_PCIE/
 cp -a 5G-Modem-Support/quectel_cm_5G/* $syncpath/quectel_cm_5G/
 cp -a 5G-Modem-Support/luci-app-modem/* $syncpath/luci-app-modem/
 cp -a 5G-Modem-Support/luci-app-sms-tool/* $syncpath/luci-app-sms-tool/
