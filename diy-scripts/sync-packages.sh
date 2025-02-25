@@ -57,7 +57,7 @@ cp -a AutoBuild-Packages/luci-app-webd/* $syncpath/luci-app-webd/
 # cp -a lede/package/wwan/app/quectel_cm_5G/* $syncpath/quectel_cm_5G/
 
 
-# 拉取移动通讯模组相关软件包
+# 拉取移动通信模组相关软件包
 mkdir -p $syncpath/sendat
 mkdir -p $syncpath/sms-tool
 mkdir -p $syncpath/quectel_MHI
