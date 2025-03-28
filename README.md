@@ -4,5 +4,5 @@ openwrt软件包
 #### 使用方式：
 
 ```bash
-echo 'src-git xmpackage https://github.com/xiaomeng9597/openwrt-packages2.git;main' >> feeds.conf.default
+echo 'src-git xmpackages https://github.com/xiaomeng9597/openwrt-packages2.git;main' >> feeds.conf.default
 ```
