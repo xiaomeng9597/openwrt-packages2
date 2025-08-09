@@ -69,6 +69,7 @@ mkdir -p $syncpath/luci-app-sms-tool
 mkdir -p $syncpath/luci-app-pcimodem
 mkdir -p $syncpath/meig-cm
 mkdir -p $syncpath/meig_QMI_WWAN
+mkdir -p $syncpath/ndisc
 git clone https://github.com/Siriling/5G-Modem-Support.git
 cp -a 5G-Modem-Support/sendat/* $syncpath/sendat/
 cp -a 5G-Modem-Support/sms-tool/* $syncpath/sms-tool/
@@ -81,3 +82,4 @@ cp -a 5G-Modem-Support/luci-app-sms-tool/* $syncpath/luci-app-sms-tool/
 cp -a 5G-Modem-Support/luci-app-pcimodem/* $syncpath/luci-app-pcimodem/
 cp -a 5G-Modem-Support/meig-cm/* $syncpath/meig-cm/
 cp -a 5G-Modem-Support/meig_QMI_WWAN/* $syncpath/meig_QMI_WWAN/
+cp -a 5G-Modem-Support/ndisc/* $syncpath/ndisc/
