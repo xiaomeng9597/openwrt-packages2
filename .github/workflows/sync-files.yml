@@ -1,6 +1,6 @@
 name: Sync Files
 
-于:
+on:
   repository_dispatch:
   workflow_dispatch:
   schedule:
